@@ -40,6 +40,26 @@ nav li a{
   padding: 10px 16px;
   letter-spacing: 2px;
 }
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+}
+.recipes .recipe img {
+  animation: smoothieAnimation 5s infinite;
+}
+@keyframes smoothieAnimation {
+  0% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
 .btn{
   border-radius: 36px;
   background: #FEE996;
