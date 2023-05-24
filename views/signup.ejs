@@ -35,8 +35,11 @@
         const data = await res.json();
         console.log (data);
             if (data.errors){
-                emailError.textContent = email.errors.email;
-                passwordError.textContent = password.errors.password;
+                emailError.textContent = data.errors.email;
+                passwordError.textContent = data.errors.password;
+            }
+            if (data.user){
+                location.assign ('/smoothies');
             }
     }
     catch (err) {

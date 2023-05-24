@@ -46,7 +46,7 @@ nav li a{
   grid-template-columns: repeat(2 , 1fr);
 }
 .recipes .recipe img {
-  animation: smoothieAnimation 5s infinite;
+  animation: smoothieAnimation 7s infinite;
 }
 @keyframes smoothieAnimation {
   0% {
