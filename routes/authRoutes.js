@@ -11,4 +11,6 @@ const authControllers = require ('../controllers/authControllers');
 
     router.post ('/login' , authControllers.login_post);
 
+    router.get ('/logout' , authControllers.logout_get);
+
     module.exports = router;
